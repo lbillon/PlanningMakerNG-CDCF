@@ -53,13 +53,15 @@ Les orgas peuvent se déclarer comme membre d'une catégorie d'orgas, cette affe
 \label{fig:ptaches}
 \caption{Processus de création et de validation d'un groupe de tâches.}
 \end{figure}
-\clearpage
+
 
 \fonction{Création}
 Un orga peut créer un nombre illimité de tâches.
 
 \fonction{Validation}
 Une tâche peut être validée par le chef de l'équipe à laquelle se rapporte la tâche ou par un \oh{}.
+
+Cette validation doit s'effectuer selon le processus décrit dans la figure \ref{fig:ptaches}
 
 \fonction{Commentaires}
 Un nombre illimité de commentaires peuvent être ajoutés à une tâche, et ce par différents orgas.
@@ -93,20 +95,24 @@ L'\oh{} peut générer, visualiser et imprimer la quantité totale de matériel 
 L'\oh{} peut générer, visualiser et imprimer le planning d'un matériel.
 
 \section{Créneaux}
+
 \begin{figure}[h!t]
 \centering
-\includegraphics[]{tache-crenaux.png}
-\label{fig:ptaches}
+\includegraphics[width=.3\textwidth]{tache-crenaux.png}
+\label{fig:pcrenaux}
 \caption{Décomposition d'une tâche en crénaux.}
 \end{figure}
 
 
 
 \fonction{Création}
-Le logiciel peut créer automatiquement des crénaux pour une tâche.
+Le logiciel peut créer automatiquement des crénaux pour une tâche. 
 
 \fonction{Planification automatique}
 Le logiciel peut assigner automatiquement des crénaux aux orgas.
+
+\fonction{Planification assistée}
+Le logiciel permet de gérer manuellement les assignations de crénaux, en aidant l'utilisateur dans ses choix.
 
 \fonction{Résultats à produire}
 Le logiciel peut générer et afficher les états suivants : 
@@ -130,16 +136,15 @@ Le logiciel peut générer et afficher les états suivants :
 
 
 \fonction{Affichage à l'écran}
-Le logiciel permet un affichage intéractif des résultats produits.
+Le logiciel permet un affichage intéractif des résultats produits, un exemple est présenté dans la figure \ref{fig:interactivite}
 
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=\textwidth]{interactivite.png}
-\label{fig:ptaches}
-Un clic sur une information ouvre le dialogue indiqué par la flèche en pointillés..
+\label{fig:pinteractivite}
+Un clic sur une information ouvre la fenêtre indiquée par la flèche en pointillés..
 \caption{Démonstration de l'interactivité}
 \end{figure}
-\clearpage
 
 
 \fonction{Impression}
