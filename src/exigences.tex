@@ -1,29 +1,51 @@
 
 \section{Orgas}
-\fonction{Inscription}
-Les Orgas doivent pouvoir insérer leurs propres informations dans le système lors de l'inscription, et pouvoir les modifier plus tard.
 
-\fonction{Disponobilités}
-Les Orgas doivent pouvoir déclarer plusieurs plages horaires pendant lesquelles ils peuvent travailler.
+
+
+\fonction{Inscription}
+Les orgas peuvent insérer leurs propres informations dans le système lors de l'inscription, et pouvoir les modifier plus tard.
+
+Les orgas peuvent effectuer ces opérations à l'aide d'une interface web, accessible en ligne.
+
+\fonction{Authentification}
+Les orgas peuvent accéder à leurs données et les modifier de manière sécurisée, qu'ils soient ou non étudiants à l'INSA de Lyon.
+
+Il est préférable que les étudiants de l'INSA s'authentifient à l'aide du système CAS.
+
+\fonction{Disponibilités}
+Les orgas peuvent déclarer plusieurs plages horaires pendant lesquelles ils peuvent travailler.
 
 \fonction{Amis}
-Les Orgas doivent pouvoir indiquer les personnes avec lesquelles ils souhaitent travailler.
+Les orgas peuvent indiquer les personnes avec lesquelles ils souhaitent travailler. Ces souhaits doivent être respectés dans la mesure du possible.
 
-\fonction{Lettres d'excuses aux départements}
-Le logiciel permet de générer des lettres d'excuses adressées aux directeurs des départements.
+\subsection{Lettres d'excuses aux départements}
+\fonction{Génération et impression}
+Le logiciel permet de générer et d'imprimer des lettres d'excuses adressées aux directeurs des départements.
+
+\fonction{Personnalisation}
+Les éléments suivants peuvent être ajoutés et modifiés aux lettres d'excuse : 
+\begin{itemize}
+ \item Nom, adresse, et logotype de l'association
+\item Nom et signature du président de l'association.
+\item Département et année de l'orga excusé
+\item Nom et adresse du destinataire
+\item Date
+\end{itemize}
 
 
 \fonction{Administration des orgas}
 L' \oh{} peut modifier les informations concernant un orga.
+
 
 \subsection{Catégories d'orgas}
 \fonction{Création}
 L'\oh{} peut créer un nombre illimité de catégories d'orgas.
 
 \fonction{Assignation des orgas}
-Les Orgas doivent pouvoir se déclarer comme membre d'une catégorie d'orgas, cette affectation devient active après validation de l'\oh{}. Un orga peut appartenir à plusieurs catégories, certaines peuvent être cachées.
+Les orgas peuvent se déclarer comme membre d'une catégorie d'orgas, cette affectation devient active après validation de l'\oh{}. Un orga peut appartenir à plusieurs catégories, certaines peuvent être cachées.
 
-\section{Taches}
+\section{Tâches}
 
 \begin{figure}[h!t]
 \centering
@@ -37,11 +59,13 @@ Les Orgas doivent pouvoir se déclarer comme membre d'une catégorie d'orgas, ce
 Un orga peut créer un nombre illimité de tâches.
 
 \fonction{Validation}
-Une tâche peut être validée par le chef de l'équipe à laquelle se rapporte la tâche.
+Une tâche peut être validée par le chef de l'équipe à laquelle se rapporte la tâche ou par un \oh{}.
 
 \fonction{Commentaires}
 Un nombre illimité de commentaires peuvent être ajoutés à une tâche, et ce par différents orgas.
 
+\fonction{Importation/Exportation}
+Les tâches (et notamment leurs description) peuvent être exportées vers et importées depuis un format de fichier standard.
 
 
 \subsection{Groupe de tâches}
@@ -62,6 +86,11 @@ Un orga peut créer un lieu directement lors de la création d'une nouvelle tâc
 \fonction{Création}
 Un orga peut créer un matériel directement lors de la création d'une nouvelle tâche.
 
+\fonction{Besoins en Matériel}
+L'\oh{} peut générer, visualiser et imprimer la quantité totale de matériel nécessaire, heure par heure.
+
+\fonction{Planning}
+L'\oh{} peut générer, visualiser et imprimer le planning d'un matériel.
 
 \section{Créneaux}
 \begin{figure}[h!t]
@@ -71,8 +100,47 @@ Un orga peut créer un matériel directement lors de la création d'une nouvelle
 \caption{Décomposition d'une tâche en crénaux.}
 \end{figure}
 
+
+
 \fonction{Création}
 Le logiciel peut créer automatiquement des crénaux pour une tâche.
 
-\fonction{Assignation des crénaux}
+\fonction{Planification automatique}
 Le logiciel peut assigner automatiquement des crénaux aux orgas.
+
+\fonction{Résultats à produire}
+Le logiciel peut générer et afficher les états suivants : 
+
+\begin{itemize}
+\item Nombre de crénaux assignés, restant à assigner et orgas disponibles en fonction du temps.
+\item Liste des crénaux, triés et groupés indifférament par : 	\begin{itemize}
+								  \item Orga
+								  \item Équipe
+								  \item Horaire
+								 \end{itemize}
+\item Liste des orgas, triés et groupés indifférament par :  	\begin{itemize}
+								  \item Catégorie
+								  \item Équipe
+								  \item Département
+								 \end{itemize}
+                                     
+
+\end{itemize}
+
+
+
+\fonction{Affichage à l'écran}
+Le logiciel permet un affichage intéractif des résultats produits.
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{interactivite.png}
+\label{fig:ptaches}
+Un clic sur une information ouvre le dialogue indiqué par la flèche en pointillés..
+\caption{Démonstration de l'interactivité}
+\end{figure}
+\clearpage
+
+
+\fonction{Impression}
+Le logiciel peut produire et imprimer les résultats produits sous forme adaptée à l'impression.
