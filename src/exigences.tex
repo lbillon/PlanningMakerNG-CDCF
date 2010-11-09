@@ -19,6 +19,22 @@ Les orgas peuvent déclarer plusieurs plages horaires pendant lesquelles ils peu
 \fonction{Amis}
 Les orgas peuvent indiquer les personnes avec lesquelles ils souhaitent travailler. Ces souhaits doivent être respectés dans la mesure du possible.
 
+\fonction{Édition de badges}
+L'\oh{} peut imprimer des badges pour les orgas.
+
+Les informations pouvant être portées sur les badges sont les suivantes, et doivent être totalement adaptables : 
+\begin{itemize}
+\item Nom de l'orga
+\item Catégorie de l'orga
+\end{itemize}
+
+Un visuel peut être ajouté et personnalisé.
+
+
+\fonction{Importation/Exportation}
+La liste des orgas, à laquelle on peut ajouter les différentes informations conçernant les orgas, peut être exportée vers et importées depuis un format de fichier standard.
+
+
 \subsection{Lettres d'excuses aux départements}
 \fonction{Génération et impression}
 Le logiciel permet de générer et d'imprimer des lettres d'excuses adressées aux directeurs des départements.
@@ -99,20 +115,21 @@ L'\oh{} peut générer, visualiser et imprimer le planning d'un matériel.
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=.3\textwidth]{tache-crenaux.png}
-\label{fig:pcrenaux}
+
 \caption{Décomposition d'une tâche en crénaux.}
+\label{fig:crenaux}
 \end{figure}
 
 
 
 \fonction{Création}
-Le logiciel peut créer automatiquement des crénaux pour une tâche. 
+Le logiciel peut créer automatiquement des crénaux pour une tâche. Cf figure \ref{fig:crenaux}
 
 \fonction{Planification automatique}
 Le logiciel peut assigner automatiquement des crénaux aux orgas.
 
 \fonction{Planification assistée}
-Le logiciel permet de gérer manuellement les assignations de crénaux, en aidant l'utilisateur dans ses choix.
+Le logiciel permet de gérer manuellement les assignations de crénaux, en aidant au maximum l'utilisateur dans ses choix.
 
 \fonction{Résultats à produire}
 Le logiciel peut générer et afficher les états suivants : 
@@ -129,7 +146,7 @@ Le logiciel peut générer et afficher les états suivants :
 								  \item Équipe
 								  \item Département
 								 \end{itemize}
-                                     
+\item Groupé par tâche, et pour chaque crénau, le lieu du crénau suivant et précédent de l'orga affecté.
 
 \end{itemize}
 
@@ -141,9 +158,23 @@ Le logiciel permet un affichage intéractif des résultats produits, un exemple 
 \begin{figure}[h!t]
 \centering
 \includegraphics[width=\textwidth]{interactivite.png}
-\label{fig:pinteractivite}
+
 Un clic sur une information ouvre la fenêtre indiquée par la flèche en pointillés..
 \caption{Démonstration de l'interactivité}
+\label{fig:interactivite}
+\end{figure}
+
+
+\fonction{Affichage de type agenda}
+Le logiciel permet d'afficher de manière interactive, sur un affichage de type agenda, la liste des crénaux pour une tâche. Il est possible de faire coincider cet affichage avec l'heure actuelle.
+Cf figure \ref{fig:agenda}
+
+\begin{figure}[h!t]
+\centering
+\includegraphics[width=\textwidth]{vue-agenda.png}
+
+\caption{Vue interactive de type agenda}
+\label{fig:agenda}
 \end{figure}
 
 
