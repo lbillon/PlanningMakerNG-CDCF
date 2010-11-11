@@ -75,7 +75,7 @@ Les orgas peuvent se déclarer comme membre d'une catégorie d'orgas, cette affe
 
 \begin{figure}[h!t]
 \centering
-\includegraphics[width=\textwidth]{process_taches.png}
+\includegraphics[width=\textwidth]{process-tachessvg.png}
 \label{fig:ptaches}
 \caption{Processus de création et de validation d'un groupe de tâches.}
 \end{figure}
@@ -90,7 +90,8 @@ Une tâche peut être validée par le chef de l'équipe à laquelle se rapporte 
 Cette validation doit s'effectuer selon le processus décrit dans la figure \ref{fig:ptaches}
 
 \fonction{Commentaires}
-Un nombre illimité de commentaires peuvent être ajoutés à une tâche, et ce par différents orgas.
+Un nombre illimité de commentaires peuvent être ajoutés à une tâche par différents orgas humains.
+
 
 \fonction{Importation/Exportation}
 Les tâches (et notamment leurs description) peuvent être exportées vers et importées depuis un format de fichier standard.
@@ -103,7 +104,7 @@ Une tâche est nécessairement incluse dans un groupe de tâches.
 Un orga peut créer un groupe de tâches directement lors de la création d'une nouvelle tâche.
 
 \fonction{Commentaires}
-Un nombre illimité de commentaires peuvent être ajoutés à un groupe de tâches, et ce par différents orgas.
+Un nombre illimité de commentaires peuvent être ajoutés à un groupe de tâches par différents orgas humains.
 
 \section{Lieux}
 \fonction{Création}
@@ -128,27 +129,27 @@ L'\oh{} peut générer, visualiser et imprimer le planning d'un matériel.
 \centering
 \includegraphics[width=.3\textwidth]{tache-crenaux.png}
 
-\caption{Décomposition d'une tâche en crénaux.}
+\caption{Décomposition d'une tâche en créneaux.}
 \label{fig:crenaux}
 \end{figure}
 
 
 
 \fonction{Création}
-Le logiciel peut créer automatiquement des crénaux pour une tâche. Cf figure \ref{fig:crenaux}
+Le logiciel peut créer automatiquement des créneaux pour une tâche. Cf figure \ref{fig:crenaux}
 
 \fonction{Planification automatique}
-Le logiciel peut assigner automatiquement des crénaux aux orgas.
+Le logiciel peut assigner automatiquement des créneaux aux orgas.
 
 \fonction{Planification assistée}
-Le logiciel permet de gérer manuellement les assignations de crénaux, en aidant au maximum l'utilisateur dans ses choix.
+Le logiciel permet de gérer manuellement les assignations de créneaux, en aidant au maximum l'utilisateur dans ses choix.
 
 \fonction{Résultats à produire}
 Le logiciel peut générer et afficher les états suivants : 
 
 \begin{itemize}
-\item Nombre de crénaux assignés, restant à assigner et orgas disponibles en fonction du temps.
-\item Liste des crénaux, triés et groupés indifférament par : 	\begin{itemize}
+\item Nombre de créneaux assignés, restant à assigner et orgas disponibles en fonction du temps.
+\item Liste des créneaux, triés et groupés indifférament par : 	\begin{itemize}
 								  \item Orga
 								  \item Équipe
 								  \item Horaire
@@ -159,12 +160,12 @@ Le logiciel peut générer et afficher les états suivants :
 								  \item Équipe
 								  \item Département
 								 \end{itemize}
-\item Groupé par tâche, et pour chaque crénau, le lieu du crénau suivant et précédent de l'orga affecté.
+\item Groupé par tâche, et pour chaque créneau, le lieu du créneau suivant et précédent de l'orga affecté.
 
 \end{itemize}
 
 \fonction{Vérification des erreurs}
-Le logiciel affiche une rapport détaillé lorsque une incohérence est détectée dans les crénaux (temps trop court entre deux crénaux, manque d'orgas pour un crénau, tâche sans crénaux)
+Le logiciel affiche une rapport détaillé lorsque une incohérence est détectée dans les créneaux (temps trop court entre deux créneaux, manque d'orgas pour un créneau, tâche sans créneaux, trop peu de temps pour dormir)
 
 
 
@@ -182,7 +183,7 @@ Un clic sur une information ouvre la fenêtre indiquée par la flèche en pointi
 
 
 \fonction{Affichage de type agenda}
-Le logiciel permet d'afficher de manière interactive, sur un affichage de type agenda, la liste des crénaux pour une tâche. Il est possible de faire coincider cet affichage avec l'heure actuelle.
+Le logiciel permet d'afficher de manière interactive, sur un affichage de type agenda, la liste des créneaux pour une tâche. Il est possible de faire coincider cet affichage avec l'heure actuelle.
 Cf figure \ref{fig:agenda}
 
 \begin{figure}[h!t]
@@ -197,9 +198,16 @@ Cf figure \ref{fig:agenda}
 \fonction{Impression}
 Le logiciel peut produire et imprimer tous les résultats produits sous forme adaptée à l'impression, y compris la vue de type agenda.
 
-\fonction{Première page}
+\fonction{Format des plannings}
 
-Notamment pour les plannings orga, il est possible de personnaliser la première et dermière page en y ajoutant du texte, des images ou un résumé du planning.
+Notamment pour les plannings orga, il est possible de personnaliser de manière complète le format des plannings. On peut notamment choisir :
+\begin{itemize}
+ \item La présentation de chaque créneau (nature et disposition des informations à afficher)
+\item Les informations présentées en en-tête, pied de page
+\item Les informations présentées à la première et dernière page
+\item Les informations présentées au recto du planning (plan de la manifestation par exemple)
+\end{itemize}
+
 \section{Véhicule}
 
 \fonction{Création}
@@ -219,7 +227,7 @@ Le logiciel signale à l'utilisateur si un véhicule affecté à une tâche n'es
 Les orgas peuvent créer un nombre illimité de voyages.
 
 \fonction{Planification automatique}
-Le logiciel peut assigner automatiquement des crénaux aux orgas.
+Le logiciel peut assigner automatiquement des créneaux aux orgas.
 
 \fonction{Contrôle de capacité maximale}
 Le logiciel signale à l'utilisateur si un véhicule affecté doit transporter plus que sa capacité.
