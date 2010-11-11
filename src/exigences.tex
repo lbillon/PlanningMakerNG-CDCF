@@ -1,3 +1,13 @@
+\section{Manifestation}
+
+
+
+\fonction{Création}
+Le logiciel dispose d'un assistant permettant de se configurer facilement pour une nouvelle manifestation.
+
+Les données sont par la suite entièrement modifiables.
+
+
 
 \section{Orgas}
 
@@ -99,6 +109,8 @@ Un nombre illimité de commentaires peuvent être ajoutés à un groupe de tâch
 \fonction{Création}
 Un orga peut créer un lieu directement lors de la création d'une nouvelle tâche.
 
+
+
 \section{Matériel}
 
 \fonction{Création}
@@ -140,6 +152,7 @@ Le logiciel peut générer et afficher les états suivants :
 								  \item Orga
 								  \item Équipe
 								  \item Horaire
+\item Heure
 								 \end{itemize}
 \item Liste des orgas, triés et groupés indifférament par :  	\begin{itemize}
 								  \item Catégorie
@@ -149,6 +162,9 @@ Le logiciel peut générer et afficher les états suivants :
 \item Groupé par tâche, et pour chaque crénau, le lieu du crénau suivant et précédent de l'orga affecté.
 
 \end{itemize}
+
+\fonction{Vérification des erreurs}
+Le logiciel affiche une rapport détaillé lorsque une incohérence est détectée dans les crénaux (temps trop court entre deux crénaux, manque d'orgas pour un crénau, tâche sans crénaux)
 
 
 
@@ -179,4 +195,43 @@ Cf figure \ref{fig:agenda}
 
 
 \fonction{Impression}
-Le logiciel peut produire et imprimer les résultats produits sous forme adaptée à l'impression.
+Le logiciel peut produire et imprimer tous les résultats produits sous forme adaptée à l'impression, y compris la vue de type agenda.
+
+\fonction{Première page}
+
+Notamment pour les plannings orga, il est possible de personnaliser la première et dermière page en y ajoutant du texte, des images ou un résumé du planning.
+\section{Véhicule}
+
+\fonction{Création}
+Les orgas peuvent créer un nombre illimité de voyages.
+
+
+\fonction{Contrôle d'erreurs}
+Le logiciel signale à l'utilisateur si un véhicule affecté à une tâche n'est pas présent au lieu de la tâche.
+
+
+
+
+
+\section{Voyages}
+
+\fonction{Création}
+Les orgas peuvent créer un nombre illimité de voyages.
+
+\fonction{Planification automatique}
+Le logiciel peut assigner automatiquement des crénaux aux orgas.
+
+\fonction{Contrôle de capacité maximale}
+Le logiciel signale à l'utilisateur si un véhicule affecté doit transporter plus que sa capacité.
+
+\subsection{Résultats à produire}
+Le logiciel peut générer, afficher de manière interactive et imprimer :
+\fonction{Fiche de véhicule ``Véhicule Book''}
+Une fiche de véhicule qui indique, pour un véhicule, la liste de ses voyages et toutes les informations qui leurs sont associées, en particulier le matériel à charger.
+
+Pour chaque voyage, un aperçu du trajet peut être donné sous forme de carte.
+
+\fonction{Fiches de transport}
+Une fiche de coffre qui indique pour chaque voyage d'un véhicule la liste du matériel et des orgas à transporter.
+En en-tête figure les informations spécifiques au voyage et au véhicule.
+
